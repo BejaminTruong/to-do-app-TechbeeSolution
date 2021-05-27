@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-weight: 600;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.App {
+  max-width: 500px;
+  padding: 50px;
+  margin: 50px auto;
+  box-shadow: 0 2px 6px #555;
+  min-height: 400px;
+}
+h1 {
+  text-align: center;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: #666;
+}
+button,
+lable {
+  cursor: pointer;
+}
+form {
+  width: 100%;
+  height: 40px;
+  margin: 20px 0;
+  display: flex;
+}
+form input,
+form button {
+  flex: 3;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #555;
+  margin: 0 5px;
+}
+form button {
+  flex: 1;
+  background: #555;
+  color: white;
+  letter-spacing: 2px;
+}
+ul li {
+  list-style: none;
+  border: 1px solid #ccc;
+  margin: 10px 0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+ul li .done {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+ul li input,
+.row button {
+  margin-right: 5px;
+  transform: translateY(1px);
+}
+ul li button,
+.row button {
+  border: none;
+  outline: none;
+  background: orange;
+  padding: 10px 5px;
+  border-radius: 5px;
+}
+ul li #btnEdit {
+  margin-right: 5px;
+  width: 40px;
+}
+#btnDelete,
+#btnDeleteToggled {
+  background: rgb(253, 45, 45);
+}
+#btnDelete {
+  width: 40px;
+}
+#btnToggleAll {
+  background: rgb(58, 58, 197);
+  color: white;
+}
+.row {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+.row #all {
+  background: rgba(79, 79, 255, 0.589);
+}
+.row #delete {
+  background: red;
+}
+.filter {
+  margin-top: 20px;
+}
+.filter button {
+  width: 50px;
+  background: rgb(228, 228, 228);
+}
+.btnClick {
+  background: rgb(60, 160, 60) !important;
+  color: white;
+}

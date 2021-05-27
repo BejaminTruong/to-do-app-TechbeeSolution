@@ -11,7 +11,7 @@ export const Filter = () => {
             setFilter("all");
           }}
           id="btnAll"
-          className="btnClick"
+          className={filter === "all" ? "btnClick" : ""}
         >
           All
         </button>
@@ -20,6 +20,7 @@ export const Filter = () => {
             setFilter("done");
           }}
           id="btnDone"
+          className={filter === "done" ? "btnClick" : ""}
         >
           Done
         </button>
@@ -28,6 +29,7 @@ export const Filter = () => {
             setFilter("active");
           }}
           id="btnActive"
+          className={filter === "active" ? "btnClick" : ""}
         >
           Active
         </button>
